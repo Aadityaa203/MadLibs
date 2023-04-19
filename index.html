@@ -5,52 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mad Libs</title>
 </head>
 
 <body>
-    <h1>Let's have some fun with Mad Libs</h1>
-    <form action="">
-        <label for="noun">
+    <!-- <label for="noun"></label>
+        <label for="pluralNoun"></label>
+        <label for="PastTense"></label>
+        <label for="adjective"></label>
+        <label for="verb-presentTense"></label>
+        <label for="button"></label> -->
+    <div class="container">
+        <h1>Let's have some fun with Mad Libs</h1>
+        <form action="">
             <input type="text" placeholder="noun" id="noun" name="fillInTheBox">
-        </label>
-        <label for="pluralNoun">
             <input type="text" placeholder="Plural noun" id="pluralNoun" name="fillInTheBox">
-        </label>
-        <label for="PastTense">
             <input type="text" placeholder="PastTense" id="PastTense" name="fillInTheBox">
-        </label>
-        <label for="adjective">
             <input type="text" placeholder="adjective" id="adjective" name="fillInTheBox">
-        </label>
-        <label for="verb-presentTense">
             <input type="text" placeholder="verb-presentTense" id="verb-presentTense" name="fillInTheBox">
-        </label>
-        <label for="button">
-            <button type="button" id="button" onclick="createMadLibs">Submit Mad Libs</button>
-        </label>
-    </form>
-    <div>
-        <ol>
-            <li>
-                <p>Today we are creating Mad libs using the ........ </p> <!-- computer -->
-            </li>
-            <li>
-                <p> The Mad Libs I created is really awesome to play with ....... </p> <!-- friends -->
-            </li>
-            <li>
-                <p>Other students ..... playing the mad libs I created</p> <!-- enjoyed -->
-            </li>
-            <li>
-                <p>The fun mad libs is a ....... way to spend time and have fun.</p> <!-- perfect -->
-            </li>
-            <li>
-                <p>we ..... Mad Libs everyday</p> <!-- plays -->
-            </li>
-        </ol>
+            <div>
+                <button type="button" id="button" onclick="createMadLibs()">Submit Mad Libs</button>
+            </div>
+        </form>
+        <div class="secondForm">
+            <h1>Second MadLibs</h1>
+            <ol>
+                <li>
+                    <p>Today we are creating Mad libs using the
+                        <label for="noun">
+                            <input type="text" placeholder="noun">
+                        </label>.
+                    </p>
+                    <!-- computer -->
+                </li>
+                <li>
+                    <p> The Mad Libs I created is really awesome to play with
+                        <label for="Pluralnoun">
+                            <input type="text" placeholder="pluralnoun">
+                        </label>.
+                    </p>
+                    <!-- friends -->
+                </li>
+                <li>
+                    <p>Other students
+                        <label for="PastTense">
+                            <input type="text" placeholder="PastTense">
+                        </label> playing the mad libs I created.
+                    </p>
+                    <!-- enjoyed -->
+                </li>
+                <li>
+                    <p>The fun mad libs is a
+                        <label for="adjective">
+                            <input type="text" placeholder="adjective">
+                        </label>
+                        way to spend time and have fun.
+                    </p>
+                    <!-- perfect -->
+                </li>
+                <li>
+                    <p>we <label for="verb-presentTense">
+                            <input type="text" placeholder="verb-presentTense">
+                        </label> Mad Libs everyday.
+                    </p>
+                    <!-- plays -->
+                </li>
+            </ol>
+            <button type="button" id="button" onclick="createMadLibs">Submit Mad Libs
+            </button>
+        </div>
+
     </div>
-
-
 </body>
 
 </html>
