@@ -14,18 +14,25 @@
     <div class="container">
         <h1>Let's have some fun with Mad Libs</h1>
         <h2>Use some of your own creative idea</h2>
-        <form action="">
-            <input type="text" placeholder="noun" id="word1" name="fillInTheBox">
-            <input type="text" placeholder="PluralNoun" id="word2" name="fillInTheBox">
-            <input type="text" placeholder="PastTense" id="word3" name="fillInTheBox">
-            <input type="text" placeholder="adjective" id="word4" name="fillInTheBox">
-            <input type="text" placeholder="verbPresentTense" id="word5" name="fillInTheBox">
-            <div>
-                <button type="button" id="button" onclick="createParagraph()">Submit Mad Libs</button>
-            </div>
+        <div class="flex-box">
+            <form action="">
+                <div class="row">
+                    <input type="text" placeholder="noun" id="word1" name="fillInTheBox">
+                    <input type="text" placeholder="PluralNoun" id="word2" name="fillInTheBox">
+                </div>
+                <div class="row1">
+                    <input type="text" placeholder="PastTense" id="word3" name="fillInTheBox">
+                    <input type="text" placeholder="adjective" id="word4" name="fillInTheBox">
+                    <input type="text" placeholder="verbPresentTense" id="word5" name="fillInTheBox">
+                </div>
 
-            <div id="answer"></div>
-        </form>
+                <div class="button">
+                    <button type="button" id="button" onclick="createParagraph()">Submit Mad Libs</button>
+                </div>
+
+                <div id="answer"></div>
+            </form>
+        </div>
 
     </div>
 

@@ -24,11 +24,14 @@ h2{
 form{
     text-align: center;  
 }
-button{
-    margin-top: 15px;
-    padding: 10px 20px;
+
+div.button{
+    text-align: center;
+}
+button#button{
     border-radius: 19px;
-    background-color: rgb(217, 226, 235);
+    margin: 15px;
+    padding: 12px 12px;
 }
 button:hover{
     color: rgb(1, 1, 7);
@@ -37,10 +40,10 @@ button:hover{
 #answer{
     margin-top: 60px;
     font-size: 20px;
+    text-align: center;
 }
 input{
     padding: 6px;
     border-radius: 4px;
 }
-
 
